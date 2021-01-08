@@ -37,7 +37,7 @@ jobs:
           PASSWORD: ${{ secrets.PASSWORD }}
           ADDRESS: ${{ secrets.ADDRESS }}
         run: |
-          python3 DailyCP.py ${SCHOOL_NAME} ${ACCOUNT} ${PASSWORD} ${ADDRESS} cat>formdb/36.json<<EOF
+          python3 DailyCP.py ${SCHOOL_NAME} ${ACCOUNT} ${PASSWORD} ${ADDRESS} cat>formdb/
       - name : Upload formdb
         uses: actions/upload-artifact@master
         with:
